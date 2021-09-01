@@ -1,9 +1,9 @@
 services:
 - type: pserv
-  name: redis
+  name: postco-web-prod-redis-cache
   env: docker
   region: frankfurt
   disk:
     name: data
     mountPath: /var/lib/redis
-    sizeGB: 2
+    sizeGB: 1
