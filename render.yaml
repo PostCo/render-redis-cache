@@ -1,6 +1,16 @@
 services:
 - type: pserv
   name: postco-web-prod-redis-cache
+  plan: "starter plus"
+  env: docker
+  region: frankfurt
+  disk:
+    name: data
+    mountPath: /var/lib/redis
+    sizeGB: 2
+- type: pserv
+  name: postco-web-non-prod-redis-cache
+  plan: starter
   env: docker
   region: frankfurt
   disk:
