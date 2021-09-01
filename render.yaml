@@ -1,5 +1,5 @@
 services:
-- type: web
+- type: pserv
   name: redis
   env: docker
   region: frankfurt
