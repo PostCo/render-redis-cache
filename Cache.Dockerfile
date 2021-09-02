@@ -1,5 +1,5 @@
 FROM redis:6-alpine
 
-COPY redis.conf .
+COPY redis_cache.conf .
 
 ENTRYPOINT ["redis-server", "./redis_cache.conf"]
